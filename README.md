@@ -2,26 +2,25 @@
   Python 3.11.9 && window11
 
 ```shell
+# 创建py虚拟环境
 python -m venv venv 
-```
 
-```shell
+# 进入虚拟环境
+.\venv\Scripts\activate
+
+# 安装资源
 .\venv\Scripts\pip install torch==2.2.0+cu118 torchvision==0.17.0+cu118 torchaudio==2.2.0  https://download.pytorch.org/whl/torch_stable.html
-```
 
-```shell
+# 安装环境
 .\venv\Scripts\pip install -r .\requirements.dev.txt
-```
 
-```shell
- .\venv\Scripts\pip install -r .\requirements.txt
-```
+# 安装环境
+.\venv\Scripts\pip install -r .\requirements.txt
 
-```shell
+# 安装环境
 .\venv\Scripts\pip install e .
-```
 
-```shell
+# 进行转换
 .\venv\Scripts\python.exe .\train.py
 ```
 
